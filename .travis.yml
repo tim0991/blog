@@ -21,7 +21,7 @@ after_script:
   - git config user.name "tim"
   - git config user.email "tim0991@qq.com"
   - git add -A
-  - git commit -m "deploy $TRAVIS_BUILD_NUMBER"
+  - git commit -m "auto deploy"
   # Github Pages
   - git push --force --quiet "https://$GITHUB_TOKEN@${BLOG_REPO}" master:master
 
