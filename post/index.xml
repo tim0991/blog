@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tim&#39;s Blog</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Tim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Jun 2020 11:24:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test Comment2</title>
+      <link>http://localhost:1313/post/test-comment2/</link>
+      <pubDate>Wed, 24 Jun 2020 11:24:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test-comment2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test Comment</title>
+      <link>http://localhost:1313/post/test-comment/</link>
+      <pubDate>Wed, 24 Jun 2020 11:11:18 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test-comment/</guid>
+      <description>test comment</description>
+    </item>
+    
+    <item>
+      <title>hello hugo</title>
+      <link>http://localhost:1313/post/hello-hugo/</link>
+      <pubDate>Sun, 21 Jun 2020 11:00:15 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hello-hugo/</guid>
+      <description>hello hugo</description>
+    </item>
+    
+  </channel>
+</rss>
