@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Tim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2020 11:24:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2020 22:58:30 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test Commend Last</title>
+      <link>http://localhost:1313/post/test-commend-last/</link>
+      <pubDate>Wed, 24 Jun 2020 22:58:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test-commend-last/</guid>
+      <description>last one</description>
+    </item>
     
     <item>
       <title>Test Comment2</title>

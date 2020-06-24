@@ -3,20 +3,27 @@
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-24T11:24:08+08:00</lastmod>
+    <lastmod>2020-06-24T22:58:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/test-comment2/</loc>
-    <lastmod>2020-06-24T11:24:08+08:00</lastmod>
+    <loc>http://localhost:1313/post/test-commend-last/</loc>
+    <lastmod>2020-06-24T22:58:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-24T22:58:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/test-comment2/</loc>
     <lastmod>2020-06-24T11:24:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
