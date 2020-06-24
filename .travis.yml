@@ -1,0 +1,39 @@
+go:
+  - "1.14"
+
+# Specify which branches to build using a safelist
+branches:
+  only:
+    - master
+
+install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.73.0/hugo_0.73.0_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+
+script:
+  # 运行hugo命令
+  - hugo -D
+
+after_script:
+  # 部署
+  - cd ./public
+  - git init
+  - git config user.name "tim"
+  - git config user.email "tim0991@qq.com"
+  - git add -A
+  - git commit -m "deploy $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push --force --quiet "https://$GITHUB_TOKEN@${BLOG_REPO}" master:master
+
+env:
+  global:
+    - BLOG_REPO: github.com/tim0991/tim0991.github.io
+
+deploy:
+  provider: pages # 重要，指定这是一份github pages的部署配置
+  skip-cleanup: true # 重要，不能省略
+  local-dir: public # 静态站点文件所在目录
+  github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
+  keep-history: true # 是否保持target-branch分支的提交记录
+  on:
+    branch: master # 博客源码的分支
