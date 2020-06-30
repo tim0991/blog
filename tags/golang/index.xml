@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Tim&#39;s Blog</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on Tim&#39;s Blog</description>
+    <title>golang on Tim&#39;s Blog</title>
+    <link>http://localhost:1313/tags/golang/</link>
+    <description>Recent content in golang on Tim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 30 Jun 2020 15:23:13 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://localhost:1313/post/how-to-pack-file-into-binary/</guid>
       <description>文章由来 这篇文章源于一个实际的项目需求，当项目中的变量需要根据环境而变化时，会引入环境变量来根据不同环境适配。 在这个项目中需要用一个变量来设</description>
-    </item>
-    
-    <item>
-      <title>hello hugo</title>
-      <link>http://localhost:1313/post/hello-hugo/</link>
-      <pubDate>Sun, 21 Jun 2020 11:00:15 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/hello-hugo/</guid>
-      <description>hello hugo</description>
     </item>
     
   </channel>

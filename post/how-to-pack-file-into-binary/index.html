@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>How to Pack File Into Binary - Tim&#39;s Blog</title>
+  <title>如何将静态文件打包进入golang二进制程序中 - Tim&#39;s Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -40,22 +40,22 @@
 <link rel="stylesheet" href="/css/override.css">
 
 
-<meta property="og:title" content="How to Pack File Into Binary" />
+<meta property="og:title" content="如何将静态文件打包进入golang二进制程序中" />
 <meta property="og:description" content="文章由来 这篇文章源于一个实际的项目需求，当项目中的变量需要根据环境而变化时，会引入环境变量来根据不同环境适配。 在这个项目中需要用一个变量来设" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/how-to-pack-file-into-binary/" />
 <meta property="article:published_time" content="2020-06-30T15:23:13+08:00" />
 <meta property="article:modified_time" content="2020-06-30T15:23:13+08:00" />
-<meta itemprop="name" content="How to Pack File Into Binary">
+<meta itemprop="name" content="如何将静态文件打包进入golang二进制程序中">
 <meta itemprop="description" content="文章由来 这篇文章源于一个实际的项目需求，当项目中的变量需要根据环境而变化时，会引入环境变量来根据不同环境适配。 在这个项目中需要用一个变量来设">
 <meta itemprop="datePublished" content="2020-06-30T15:23:13&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-30T15:23:13&#43;08:00" />
-<meta itemprop="wordCount" content="904">
+<meta itemprop="wordCount" content="911">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Pack File Into Binary"/>
+<meta itemprop="keywords" content="golang," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何将静态文件打包进入golang二进制程序中"/>
 <meta name="twitter:description" content="文章由来 这篇文章源于一个实际的项目需求，当项目中的变量需要根据环境而变化时，会引入环境变量来根据不同环境适配。 在这个项目中需要用一个变量来设"/>
 
 <!--[if lte IE 9]>
@@ -119,12 +119,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">How to Pack File Into Binary</h1>
+      <h1 class="post-title">如何将静态文件打包进入golang二进制程序中</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-06-30 </span>
         
-          <span class="more-meta"> 904 words </span>
+          <span class="more-meta"> 911 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -132,7 +132,7 @@
 
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
+  <div class="post-toc-content">
     <nav id="TableOfContents"></nav>
   </div>
 </div>
@@ -148,7 +148,7 @@
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">CDN=http://cdn.xx.com/xxx
 </code></pre></td></tr></table>
 </div>
-</div><p>然后在项目中获取文件中对应key的值。但是这样操作之后有一个问题，就是配置文件没有打包进入编译后的binary中去，所以在程序中直接获取的话会出现can&rsquo;t open file .env之类的错误，搜索之后发现已经有很多开源工具，下面就介绍一下其中一个第三方包<code>pkger</code></p>
+</div><p>然后在项目中获取文件中对应key的值。但是这样操作之后有一个问题，就是配置文件没有打包进入编译后的binary中去，所以在程序中直接获取的话会出现can&rsquo;t open file .env之类的错误，搜索之后发现已经有很多开源包实现了打包的功能，下面就介绍一下其中一个第三方包<code>pkger</code></p>
 <h1 id="如何使用pkger">如何使用pkger</h1>
 <ul>
 <li>
@@ -213,7 +213,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">var _ = pkger.Apply(mem.UnmarshalEmbed([]byte(`1f8b08000000000000ffe....
+<pre class="chroma"><code class="language-golang" data-lang="golang"><span class="kd">var</span> <span class="nx">_</span> <span class="p">=</span> <span class="nx">pkger</span><span class="p">.</span><span class="nf">Apply</span><span class="p">(</span><span class="nx">mem</span><span class="p">.</span><span class="nf">UnmarshalEmbed</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="err">`</span><span class="mi">1</span><span class="nx">f8b08000000000000ffe</span><span class="o">...</span><span class="p">.</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><code>UnmarshalEmbed</code>方法的参数decode之后内容大概如下</p>
@@ -354,10 +354,15 @@
     </span>
   </p>
   
-  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/golang/">golang</a>
+          </div>
       <nav class="post-nav">
         
         <a class="next" href="/post/hello-hugo/">
@@ -375,7 +380,7 @@
     <script type="text/javascript">
       var gitalk = new Gitalk({
         id: '2020-06-30 15:23:13 \u002b0800 \u002b0800',
-        title: 'How to Pack File Into Binary',
+        title: '如何将静态文件打包进入golang二进制程序中',
         clientID: '507a0ecd41425c19b8a0',
         clientSecret: 'cb4d454e9c118727b2d46caafb052645cdea84ff',
         repo: 'blog_comment',
@@ -431,7 +436,7 @@
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
