@@ -1,7 +1,8 @@
 ---
-title: "How to Pack File Into Binary"
+title: "如何将静态文件打包进入golang二进制程序中"
 date: 2020-06-30T15:23:13+08:00
 draft: true
+tags: ["golang"]
 ---
 
 # 文章由来
@@ -14,7 +15,7 @@ draft: true
 CDN=http://cdn.xx.com/xxx
 ```
 
-然后在项目中获取文件中对应key的值。但是这样操作之后有一个问题，就是配置文件没有打包进入编译后的binary中去，所以在程序中直接获取的话会出现can't open file .env之类的错误，搜索之后发现已经有很多开源工具，下面就介绍一下其中一个第三方包`pkger`
+然后在项目中获取文件中对应key的值。但是这样操作之后有一个问题，就是配置文件没有打包进入编译后的binary中去，所以在程序中直接获取的话会出现can't open file .env之类的错误，搜索之后发现已经有很多开源包实现了打包的功能，下面就介绍一下其中一个第三方包`pkger`
 
 
 
@@ -68,7 +69,7 @@ CDN=http://cdn.xx.com/xxx
 
 打开打包后的文件`pkger.go`查阅发现有一串如下代码
 
-```
+```golang
 var _ = pkger.Apply(mem.UnmarshalEmbed([]byte(`1f8b08000000000000ffe....
 ```
 
