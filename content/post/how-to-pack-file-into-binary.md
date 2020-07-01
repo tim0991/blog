@@ -3,6 +3,7 @@ title: "如何将静态文件打包进入golang二进制程序中"
 date: 2020-06-30T15:23:13+08:00
 draft: true
 tags: ["golang"]
+categories: ["技术"]
 ---
 
 # 文章由来
