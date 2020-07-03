@@ -1,6 +1,6 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://tim0991.github.io/"
 languageCode = "en"
-defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Tim's Blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
@@ -19,6 +19,12 @@ paginate = 8                                              # 首页每页显示�
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = false
+    startLevel = 1
 
 [permalinks]
   "post" = "post/:year/:month/:day/:filename"
@@ -51,12 +57,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
-
-[markup]
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
     
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
@@ -65,7 +65,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2020"            # Site creation time          # 站点建立时间
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
-  gitRepo = "github.com/tim0991"
+  gitRepo = ""
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   #logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
