@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tim&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://tim0991.github.io/</link>
     <description>Recent content on Tim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 30 Jun 2020 15:23:13 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tim0991.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何将静态文件打包进入golang二进制程序中</title>
-      <link>http://localhost:1313/post/2020/06/30/how-to-pack-file-into-binary/</link>
+      <link>https://tim0991.github.io/post/2020/06/30/how-to-pack-file-into-binary/</link>
       <pubDate>Tue, 30 Jun 2020 15:23:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/2020/06/30/how-to-pack-file-into-binary/</guid>
+      <guid>https://tim0991.github.io/post/2020/06/30/how-to-pack-file-into-binary/</guid>
       <description>文章由来 这篇文章源于一个实际的项目需求，当项目中的变量需要根据环境而变化时，会引入环境变量来根据不同环境适配。 在这个项目中需要用一个变量来设</description>
     </item>
     
     <item>
       <title>hello hugo</title>
-      <link>http://localhost:1313/post/2020/06/21/hello-hugo/</link>
+      <link>https://tim0991.github.io/post/2020/06/21/hello-hugo/</link>
       <pubDate>Sun, 21 Jun 2020 11:00:15 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/2020/06/21/hello-hugo/</guid>
+      <guid>https://tim0991.github.io/post/2020/06/21/hello-hugo/</guid>
       <description>hello hugo</description>
     </item>
     
